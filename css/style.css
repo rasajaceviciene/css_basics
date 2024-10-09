@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;/*Didinanat padding nesikeicia bloko plotis*/
+}
+
+.container{
+    background-color: aquamarine;
+    /*height: 200px;/*kol nenustatytas aukstis ir nera turinio, ekranas bus tuscias*/
+    min-height: 200px;/*tekstas plecia aukti*/
+    width: 80%;
+    padding: 20px 30px; /*gali buti 4 skaiciai:top right bottom left; arba pirmas sk. - top ir bottom, antras - sonai*/
+    margin: 50px 50px; /*tas pats principas, kaip padding, tik gali buti minusines, bet taip nedaroma*/
+    margin: 50px auto; /*jei width <100%, margin auto i6centruoja*/
+    border: 10px solid black;
+    border: 10px dotted black;
+    border: 10px dashed black;
+    /*display: none; jei butu sis nustatymas, nerodytu visko, kas patalpinta konteineryje*/
+}
+
+section.img{
+    background-color: rgb(157, 127, 255);
+    width: 400px;
+    padding: 20px;
+}
+
+section.img img{
+    max-width: 100%;
+}
+
+section.links a{
+    background-color: antiquewhite;
+    padding: 10px;
+    display: block; /*inline elementa pavercia bloku, bet rodo nuorodas stulpeliu*/
+    display: inline-block;/*inline elementa pavercia bloku ir rodo eilute*/
+}
+
+section.nav nav{
+    background-color: brown;
+    padding: 5px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*section.nav nav ul li{
+    margin: 5px;
+    display: inline-block;
+}*/
+
+section.nav nav ul{
+    display: flex; /*leidzia navigacijos juostai prisitaikyti keiciant ekrano dydi*/
+}
+
+section.nav nav ul li{
+    margin: 5px;
+    flex-grow: 1;
+    list-style: none;
+}
+
+section.nav nav ul li a{
+    background-color: rgb(43, 226, 64);
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    display: block;
+}
+
+section.nav nav ul li a:hover{
+    background-color: grey;
+}
+
+section.article {
+    display: flex;
+}
+
+section.article article{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(225, 0, 255);
+    text-align: center;
+}
